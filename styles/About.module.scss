@@ -1,0 +1,37 @@
+.aboutText {
+  width: 500px;
+  margin-top: 15px;
+  text-align: justify;
+  @media screen and (max-width: 750px) {
+    padding: 0 25px;
+  }
+
+}
+
+.aboutContent {
+  display: flex;
+  margin: 0 auto;
+  width: 800px;
+  align-items: center;
+
+  @media screen and (max-width: 900px) {
+    width: 600px;
+  }
+
+  @media screen and (max-width: 750px) {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    ;
+  }
+}
+
+.ownImage{
+  margin-right: 40px;
+
+  @media screen and (max-width: 750px) {
+    margin-right: 0;
+    width: 250px;
+  }
+}

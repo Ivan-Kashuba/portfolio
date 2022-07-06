@@ -1,0 +1,144 @@
+//Global
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Comfortaa', cursive;
+  color: #4b4f51;
+}
+
+a {
+  text-decoration: none;
+}
+
+main {
+  position: relative;
+  top: 100vh;
+}
+
+.error {
+  color: red;
+  text-align: center;
+  margin: 5px 0;
+}
+
+
+.confirm {
+  color: green;
+  text-align: center;
+  margin: 5px 0;
+}
+
+.section-container {
+  width: 1680px;
+  margin: 0 auto;
+  padding-top: 60px;
+  @media screen and (max-width: 1680px) {
+    width: 1260px;
+  }
+
+  @media screen and (max-width: 1285px) {
+    width: 900px;
+  }
+
+  @media screen and (max-width: 900px) {
+    width: 600px;
+    padding-top: 20px;
+  }
+
+  @media screen and (max-width: 600px) {
+    width: 100%;
+  }
+
+}
+
+.headlineName {
+  text-align: center;
+
+
+  .headlineText {
+    margin: 30px 0;
+    flex-direction: column;
+    font-size: 30px;
+    display: inline-flex;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #47c9e5;
+    border-radius: 6px;
+    color: #fff;
+    padding: 0 6px;
+    @media screen and (max-width: 900px) {
+      margin: 15px 0;
+    }
+
+    &:after {
+      margin-top: 3px;
+      content: "";
+      width: 100%;
+      height: 5px;
+      background-color: #fff;
+    }
+  }
+
+}
+
+//Tech Stack
+.stack_cards {
+  display: flex;
+  margin-top: 20px;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+
+  .stack_item {
+    margin: 50px;
+    width: 260px;
+    height: 260px;
+    position: relative;
+
+    @media screen and (max-width: 1290px) {
+      width: 250px;
+      height: 250px;
+      margin: 20px;
+    }
+
+    @media screen and (max-width: 900px) {
+      width: 200px;
+      height: 200px;
+      margin: 20px 0;
+    }
+
+    &:hover .stack_item_content {
+      opacity: 1;
+    }
+
+    .stack_item_photo {
+      position: absolute;
+      z-index: 1;
+    }
+
+    .stack_item_content {
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      position: absolute;
+      z-index: 2;
+      opacity: 0;
+      transition: opacity 0.2s linear;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 25px;
+      text-transform: uppercase;
+      color: white;
+      font-weight: bold;
+    }
+
+  }
+}
+
+
+
+

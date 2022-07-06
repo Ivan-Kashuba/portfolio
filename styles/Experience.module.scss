@@ -1,0 +1,69 @@
+
+.experienceText {
+  text-align: center;
+  margin-top: 20px;
+
+  @media screen and (max-width: 600px) {
+    padding: 0 15px;
+  }
+
+}
+
+.expIcons {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 50px;
+
+
+  .expIconUzhNU {
+    border-radius: 50%;
+    box-shadow: 0 0 25px 3px #96d0e3;
+    height: 300px;
+    margin: 0 30px;
+
+    @media screen and (max-width: 900px) {
+
+    }
+
+    @media screen and (max-width: 600px) {
+      height: 250px;
+      width: 250px;
+    }
+
+  }
+
+  .expIconStep {
+    box-shadow: 0 0 12px 1px #1717da;
+    height: 300px;
+    margin: 0 30px;
+
+
+
+    @media screen and (max-width: 900px) {
+      margin-top: 50px;
+      margin-bottom: 0;
+    }
+
+    @media screen and (max-width: 600px) {
+      height: 250px;
+      width: 250px;
+    }
+
+  }
+
+  .expIconFicus {
+    box-shadow: 0 0 25px 3px #0a590a;
+    height: 300px;
+    margin: 0 30px;
+
+    @media screen and (max-width: 1285px) {
+      margin-top: 80px;
+    }
+
+    @media screen and (max-width: 600px) {
+      height: 250px;
+      width: 250px;
+    }
+  }
+}

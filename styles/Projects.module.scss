@@ -1,0 +1,228 @@
+
+.projContainer {
+  width: 900px;
+  margin: 80px auto;
+  display: flex;
+  flex-wrap: wrap;
+
+  @media screen and (max-width: 1200px) {
+    margin: 40px auto;
+    width: 700px;
+    justify-content: space-around;
+
+  }
+
+  @media screen and (max-width: 900px) {
+    margin: 30px auto;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+
+  .photoItem {
+    position: relative;
+
+
+
+    .photo {
+      @media screen and (max-width: 1200px) {
+        margin: 15px 0;
+        width: 100%;
+
+      }
+
+      @media screen and (max-width: 600px) {
+        margin: 8px 0;
+      }
+    }
+
+
+
+    &:hover .photo {
+      opacity: 0;
+    }
+
+    &:hover .photoItemContent {
+      opacity: 1;
+    }
+
+    .photoItemContent {
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 250px;
+      align-items: center;
+      width: 100%;
+      background-color: #f5f4f4;
+      transition: 0.6s linear;
+
+      .photoContentText {
+        margin-top: 30px;
+
+        .projectName {
+          font-family: 'Raleway', sans-serif;
+          font-size: 20px;
+          text-align: center;
+          text-transform: uppercase;
+        }
+
+        .projectWay {
+          font-size: 16px;
+          margin-top: 10px;
+          text-align: center;
+          text-transform: uppercase;
+          color: #e31b6d;
+        }
+
+      }
+
+      .photoContentBtn {
+        font-family: 'Raleway', sans-serif;
+        font-weight: bold;
+        border: 2px solid #e31b6d;
+        color: #1b242f;
+        text-align: center;
+        text-transform: uppercase;
+        padding: 7px 14px;
+        margin-bottom: 30%;
+        cursor: pointer;
+
+        &:hover {
+          background-color: #e31b6d;
+        }
+      }
+
+    }
+  }
+
+
+}
+
+//DetailedExperience
+
+.detailedContainer {
+
+  .projImaged {
+    margin: 20px 0;
+    width: 100%;
+    height: 60vh;
+    position: relative;
+
+    @media screen and (max-width: 600px) {
+      height: 400px;
+    }
+  }
+
+  .projImage {
+    width: 100%;
+    height: 100%;
+
+  }
+
+  .projName {
+    font-size: 22px;
+    font-family: "Raleway", sans-serif;
+  }
+
+  .projMean {
+    margin-top: 3px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    color: #c0c0c0;
+    font-family: "Raleway", sans-serif;
+    font-size: 18px;
+    font-weight: 800;
+    padding-bottom: 8px;
+    text-transform: uppercase;
+  }
+
+  .projDescription {
+    margin-top: 13px;
+    margin-bottom: 35px;
+  }
+
+  .projLinks {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+
+    .projItem {
+      margin-right: 30px;
+    }
+
+    .projItemButton {
+      background-color: #e31b6d;
+      font-weight: 600;
+      color: #fff;
+      padding: 10px 20px;
+      cursor: pointer;
+      text-transform: uppercase;
+      font-size: 12px;
+
+      &:hover {
+        background-color: #fff;
+        color: #4b4f51;
+        border: 1px solid black;
+        transition: 0.5s;
+      }
+
+    }
+  }
+}
+
+
+//Modal Window
+
+.modal {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.5s;
+  z-index: 10;
+}
+
+.modalActive {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.modalContent {
+  padding: 20px;
+  border-radius: 12px;
+  background-color: white;
+  transform: scale(0.5);
+  transition: 0.4s all;
+}
+
+.modalContentActive {
+  width: 50vw;
+  transform: scale(1);
+
+  @media screen and (max-width: 1200px) {
+    width: 80vw;
+  }
+}
+
+.closeBtn {
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+  opacity: 0.7;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+

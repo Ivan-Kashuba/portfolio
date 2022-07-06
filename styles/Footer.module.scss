@@ -1,0 +1,27 @@
+.footer {
+  background-color: #1b242f;
+
+
+  .footerIcons {
+    width: 120px;
+    margin: 0 auto;
+    padding: 60px 0;
+    display: flex;
+    justify-content: space-between;
+
+    .footerIcon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 50px;
+      height: 50px;
+      background: lightgray;
+      cursor: pointer;
+      transition: 0.5s;
+
+      &:hover{
+        background-color: #04c2c9;
+      }
+    }
+  }
+}
